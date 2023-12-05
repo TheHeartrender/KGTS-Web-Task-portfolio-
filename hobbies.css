@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    background: #081b29;
+    color: #ededed;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #081b29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #00abf0;
+}
+
+.pro{
+    height: 100vh;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.pro .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 400px;   
+}
+
+.pro1,
+.pro2{
+    max-width: 600px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    
+}
+
+.pro .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 25px;
+    color: #00abf0;
+    font-weight: 500;
+    align-items: center;
+}
+
+.pro .desc{
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    padding-bottom: 30px;
+    color: #ededed;
+    font-weight: 150;
+    align-items: center;
+}
+
+.pro .btn{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+}
+
+.btn{
+    
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    font-weight: 600;
+    letter-spacing: 1px; 
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn:hover{
+    color: #00abf0;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn:hover::before{
+    width: 100%;
+}
